@@ -24,7 +24,7 @@
              ng-model="personalSettings.alias"
              maxlength="45"
              title="{{ 'UsersManager_Alias'|translate|e('html_attr') }}"
-             value="{{ userAlias|raw }}">
+             value="{{ userAlias|rawSafeDecoded }}">
         </div>
 
         <div piwik-field uicontrol="text" name="email"
